@@ -6,81 +6,131 @@
     <title>CV no Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+    /* Estilos adicionais */
+        .bottom-indigo-border {
+            border-bottom: 2px solid indigo;
+        }
+        .top-indigo-border {
+            border-top: 2px solid indigo;
+        }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Currículo Vittae de Pedro Yohan</h1>
+    <header class="container pt-4 pb-2">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Currículo Vittae de Pedro Yohan</h1>
+            </div>
+        </div>
     </header>
-    <nav>
+    <nav class="container-fluid">
         <a href="tWindCV.html">TWind</a>
         <a href="reactCV.html">React</a>
     </nav>
-    <main>
-        <section>
-            <h2>Informações Pessoais</h2>
-            <div>
-                <h3>Sobre mim</h3>
-                <p>Pedro Yohan Mendonça da Silva</p>
-                <p>18 anos</p>
-                <p>
-                    Estou atualmente matriculado como estudante no curso de Técnico em Informática. 
-                    Procuro por oportunidades que me permitam aplicar meu conhecimento como desenvolvedor 
-                    de web, buscando o aprimoramento pessoal, profissional e da empresa.
-                </p>
-            </div>
-            <div>
-                <h3>Contato</h3>
-                <p>+55 84 99896-7149</p>
-                <p>pedroyohan25067@gmail.com</p>
-                <p>Santa Cruz, RN.</p>
-                <p>Conjunto Aluizio Bezerra, Rua José Caminha Fiuza, 14</p>
-            </div>
-            <section>
-                <h2>Formação Acadêmica</h2>
-                <p>Técnico em Informática</p>
-                <p>IFRN <em>Campus</em> Santa Cruz, 2021 - Cursando</p>
+    <!--As cores de fundo precisam do css-->
+    <main class="container-fluid pt-4 pb-4" style="border-bottom: 2px solid indigo; border-top: 2px solid indigo;">
+        <div class="container-xl pt-4 pb-4 pl-4 pr-4">
+            <section class="row justify-content-center">
+                <h2>Informações Pessoais</h2>
+                <div class="col-md-6 pt-3">
+                    <div class="max-w-md">
+                        <h3>Sobre mim</h3>
+                        <p><strong>Nome:</strong> Pedro Yohan Mendonça da Silva</p>
+                        <p><strong>Idade:</strong> 18 anos</p>
+                        <p class="text-justify">
+                            <strong>Objetivo</strong><br>
+                            Estou atualmente matriculado como estudante no curso de Técnico em Informática. 
+                            Procuro por oportunidades que me permitam aplicar meu conhecimento como desenvolvedor 
+                            de web, buscando o aprimoramento pessoal, profissional e da empresa.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-3">
+                    <h3>Contato</h3>
+                    <div class="max-w-md">
+                        <p><strong>Telefone:</strong> +55 84 99896-7149</p>
+                        <p><strong>E-mail:</strong> pedroyohan25067@gmail.com</p>
+                        <p><strong>Endereço:</strong> Santa Cruz, RN. <br> Conjunto Aluizio Bezerra, Rua José Caminha Fiuza, 14</p>
+                    </div>
+                </div>
             </section>
-        </section>
-        <section>
-            <h2>Experiências</h2>
-            <div>
-                <p>Projeto de Extensão Sysmo, IFRN <em>Campus</em> Santa Cruz, 2023 - Atualmente</p>
-                <ul>
-                    <li>Participando como desenvolvedor <em>mobile</em> com <em>React Native</em></li>
-                </ul>
+            <!--Linha divisórioa-->
+            <div class="container row border-bottom border m-auto mt-3 mb-3" style="border-bottom: indigo;">
+                <div class="col"></div>
             </div>
-            <div>
-                <p>Bolsa de Tutoria de Aprendizagem em Laboratório, IFRN <em>Campus</em> Santa Cruz, 2023 - 2024</p>
-                <ul>
-                    <li>Auxiliou no aprendizado nas disciplinas de Algoritmos e POO dos discentes</li>
-                </ul>
+            <section class="container pl-2 pr-2">
+                <h2>Experiências</h2>
+                <div class="container mb-4">
+                    <p>
+                        <strong> 
+                            Projeto de Extensão Sysmo, IFRN <em>Campus</em> Santa Cruz, 2023 - Atualmente
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>Participando como desenvolvedor <em>mobile</em> com <em>React Native</em></li>
+                    </ul>
+                </div>
+                <div class="container mb-4">
+                    <p>
+                        <strong>
+                            Bolsa de Tutoria de Aprendizagem em Laboratório, IFRN <em>Campus</em> Santa Cruz, 2023 - 2024
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>Auxiliou no aprendizado nas disciplinas de Algoritmos e POO dos discentes</li>
+                    </ul>
+                </div>
+                <div class="container mb-4">
+                    <p>
+                        <strong>
+                            Projeto de Extensão Santa Natação, COSGEM - IFRN <em>Campus</em> Santa Cruz, 2022 - 2023
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>Trabalhou em equipe no desenvolvimento de projetos web</li>
+                        <li>Aprendeu e aplicou os conhecimentos em diferentes linguagens de marcação e programação.</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Linha divisórioa-->
+            <div class="container row border-bottom border m-auto mt-3 mb-3" style="border-bottom: indigo;">
+                <div class="col"></div>
             </div>
-            <div>
-                <p>Projeto de Extensão Santa Natação, COSGEM - IFRN <em>Campus</em> Santa Cruz, 2022 - 2023</p>
-                <ul>
-                    <li>Trabalhou em equipe no desenvolvimento de projetos web</li>
-                    <li>Aprendeu e aplicou os conhecimentos em diferentes linguagens de marcação e programação.</li>
-                </ul>
+            <div class="row">
+                <section class="col-lg-6">
+                    <h2>Formação Acadêmica</h2>
+                    <div class="max-w-md">
+                        <p>Técnico em Informática</p>
+                        <p>IFRN <em>Campus</em> Santa Cruz, 2021 - Cursando</p>
+                    </div>
+                </section>
+                <section class="col-lg-6">
+                    <h2>Habilidades Técnicas</h2>
+                    <div class="max-w-md">
+                        <ul>
+                            <li>Conhecimento em Java e Javascript</li>
+                            <li>Desenvolvimento web e <em>mobile</em></li>
+                            <li>Banco de dados</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-        </section>
-        <section>
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li>Conhecimento em Java e Javascript</li>
-                <li>Desenvolvimento web e <em>mobile</em></li>
-                <li>Banco de dados</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <p>IFRN - Santa Cruz</p>
-            <p>Trabalho de Autoria WEB</p>
-            <p>Profº. Marcelo Figueiredo Barbosa Júnior</p>
         </div>
-        <div>
-            <p>Pedro Yohan Mendonça da Silva</p>
-            <a href="https://github.com/yohan169">Meu perfil no Github</a>
+    </main>
+    <footer class="row">
+        <div class="col-lg-6">
+            <div class="text-center">
+                <p>IFRN - Santa Cruz</p>
+                <p>Trabalho de Autoria WEB</p>
+                <p>Profº. Marcelo Figueiredo Barbosa Júnior</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="text-center">
+                <p>Pedro Yohan Mendonça da Silva</p>
+                <a href="https://github.com/yohan169">Meu perfil no Github</a>
+            </div>
         </div>
     </footer>
 </body>
